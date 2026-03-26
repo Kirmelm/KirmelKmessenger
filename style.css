@@ -1,0 +1,18 @@
+body { margin: 0; background: #0e1621; color: white; font-family: sans-serif; }
+.hidden { display: none !important; }
+.screen { display: flex; height: 100vh; width: 100%; }
+
+/* Auth Card */
+.auth-card { margin: auto; background: #17212b; padding: 30px; border-radius: 15px; display: flex; flex-direction: column; gap: 10px; width: 300px; }
+input { background: #242f3d; border: 1px solid #0e1621; padding: 12px; color: white; border-radius: 8px; outline: none; }
+button { background: #50a2e9; color: white; border: none; padding: 12px; border-radius: 8px; cursor: pointer; font-weight: bold; }
+.sec-btn { background: none; color: #50a2e9; }
+
+/* Chat Layout */
+.sidebar { width: 280px; background: #17212b; padding: 15px; display: flex; flex-direction: column; gap: 10px; border-right: 2px solid #0e1621; }
+.main-chat { flex: 1; display: flex; flex-direction: column; }
+#messages { flex: 1; padding: 20px; overflow-y: auto; display: flex; flex-direction: column; gap: 10px; }
+.msg { padding: 10px 15px; border-radius: 12px; max-width: 70%; background: #182533; }
+.my-msg { background: #2b5278; align-self: flex-end; }
+.input-area { padding: 20px; background: #17212b; display: flex; gap: 10px; }
+

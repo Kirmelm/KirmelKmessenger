@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>TG Clone Pro</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Библиотеки Firebase -->
+    <script src="https://www.gstatic.com"></script>
+    <script src="https://www.gstatic.com"></script>
+    <script src="https://www.gstatic.com"></script>
+    <!-- Библиотека Шифрования -->
+    <script src="https://cdnjs.cloudflare.com"></script>
+</head>
+<body>
+
+    <!-- ЭКРАН ВХОДА -->
+    <div id="auth-screen" class="screen">
+        <div class="auth-card">
+            <h2>Вход в TG Clone</h2>
+            <input type="email" id="email" placeholder="Email">
+            <input type="password" id="password" placeholder="Пароль">
+            <button onclick="handleAuth('login')">Войти</button>
+            <button onclick="handleAuth('register')" class="sec-btn">Регистрация</button>
+        </div>
+    </div>
+
+    <!-- ЭКРАН ЧАТА -->
+    <div id="chat-screen" class="screen hidden">
+        <aside class="sidebar">
+            <div class="user-info">
+                <span id="user-display">Загрузка...</span>
+                <button onclick="logout()">Выход</button>
+            </div>
+            <input type="text" id="room-id" placeholder="ID Комнаты (напр. 777)">
+            <input type="text" id="secret-key" placeholder="Ключ шифрования">
+            <button onclick="joinRoom()">Зайти в чат</button>
+        </aside>
+
+        <main class="main-chat">
+            <div id="messages"></div>
+            <div class="input-area">
+                <input type="text" id="msg-input" placeholder="Написать сообщение...">
+                <button onclick="sendMessage()">➤</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
